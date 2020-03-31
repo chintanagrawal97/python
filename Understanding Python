@@ -1,0 +1,51 @@
+Python -> Compiled into bytecode --> Pyhton Virtual Machine 
+Python stores the bytecode in .pyc files 
+C++ - > Compiled into an executable by complier , this output is actual machine instructions for the specific processor and operating system compiler is built for. (Platform dependent)
+
+Virtual machine needs to be compiled for a specific operating system on a specific processor.All of the Python code it runs will run on any machine that has Python.
+
+Everything in python is an object - Numbers , Modules , objects of the class and the class itself , Functions etc.
+
+All objects are created in memory, and you apply labels to them. Labels themselves don't have any type 
+
+Don't need to think about heap vs stack issues in Pyton (?)
+
+List Comprehensions 
+
+---Algorithms---
+
+in operator -> if an item is included in a list , set , dictionary 
+
+any -> boolean function that returns True if any element of the given iterable evaluates to True
+
+all -> returns True only if—you guessed it—all of the elements in the iterable are True
+
+my_small_list = [1, 2, 8]
+any([x<3 for x in my_small_list])
+--True
+all([x<3 for x in my_small_list])
+--False
+
+
+---Dynmic Typing---
+
+if False:
+	print(3+'hello')
+
+Type Checking - mypy
+
+---OOPS---
+Inheritance - Base classes in Python do not have their constructor called automatically like they do in C++.
+
+The first difference is that Python has no concept of access modifiers for classes.Everything in a class object is public. The Python community has developed a convention that any member of a class starting with a single underscore is treated as private. This is in no way enforced by the language, but it seems to work out pretty well.
+
+dunder methods - Dunder methods get their name because they all start and end with a double underscore, or “d-under.”
+Many of the built-in functions that operate on objects in Python are handled by calls to that object’s dunder methods.
+
+__lt__ will allow Python to compare the relative order of two of your objects
+
+Python interpreter implements reference counting as a means of keeping track of what objects are still in use and which can be freed . Pyhton will ocassionally run the garbage collector 
+Python uses two tools to free memory:
+-The reference counting collector
+-The generational collector
+
